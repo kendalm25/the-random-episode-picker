@@ -1,0 +1,27 @@
+.show-app {
+  border: 2px solid blue;
+  width: 1280px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-header {
+}
+
+.show-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.show-pic-container {
+}
+
+.show-backdrop {
+  width: 500px;
+}
+
+.show-poster {
+  height: 400px;
+}
