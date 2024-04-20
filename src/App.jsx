@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
-import "./App.css";
-
-import showPic from "./assets/pic.jpg";
-import searchPic from "./assets/searchPic.png";
 import noPic from "./assets/No-Image-Placeholder.svg";
-
 import { Link } from "react-router-dom";
+
+import "./App.css";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 

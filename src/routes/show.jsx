@@ -36,7 +36,7 @@ const Show = () => {
     };
 
     getShowDetails();
-  }, [showId]); // Dependency on showId ensures that effect runs if the showId changes
+  }, [showId]);
 
   useEffect(() => {
     const getEpisodeDetails = async () => {
@@ -70,7 +70,6 @@ const Show = () => {
 
   const getRandomEpisode = () => {
     const numOfSeasons = details?.number_of_seasons;
-    // season 0 = 1; epsiode 0 = 1
     const season = Math.floor(Math.random() * numOfSeasons);
     setSeason(season);
     const numOfEpisodes = details?.seasons[season].episode_count;
@@ -148,7 +147,6 @@ const Show = () => {
                   </div>
 
                   <p className="episodeSmallText">
-                    {" "}
                     {randomEpisodeDetails?.overview || "No overview available."}
                   </p>
                 </div>
