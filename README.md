@@ -24,7 +24,7 @@ This app is hosted on Netlify and does not require any installation. Simply visi
 
 ## How to Use
 
-- Visit the Website: Go to Random Episode Picker.
+- Visit the Website: Go to [the-random-episode-picker.netlify.app](https://the-random-episode-picker.netlify.app).
 - Choose Your Show: Enter the name of your favorite TV show into the search box.
 - Generate Episode: Hit the 'Generate Random Episode' button to find out which episode to watch.
 
