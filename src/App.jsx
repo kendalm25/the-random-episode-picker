@@ -3,6 +3,7 @@ import "./App.css";
 
 import showPic from "./assets/pic.jpg";
 import searchPic from "./assets/searchPic.png";
+import noPic from "./assets/No-Image-Placeholder.svg";
 
 import { Link } from "react-router-dom";
 
@@ -42,10 +43,11 @@ function App() {
     <>
       <div className="app">
         <div className="header">
-          <h1>Welcome to this Episode Generator.</h1>
+          <h1>Welcome to the Random Episode Generator!</h1>
           <h2>
-            This website randomly picks episodes from all your favorite TV
-            Shows.
+            Perfect for when you want to rewatch your beloved series but can't
+            choose an episode. Just select your show, and we'll find an episode
+            for you to revisit instantly.
           </h2>
         </div>
 
@@ -67,8 +69,13 @@ function App() {
                   <div key={index}>
                     <Link to={`/show/${show.id}`}>
                       <img
-                        src={`https://image.tmdb.org/t/p/original${show.poster_path}`}
+                        src={
+                          show.poster_path
+                            ? `https://image.tmdb.org/t/p/original${show.poster_path}`
+                            : noPic
+                        }
                         className="show-pic"
+                        alt={show.name}
                       />
                     </Link>
                   </div>
